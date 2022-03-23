@@ -1,0 +1,78 @@
+.gameWrapper {
+  background: url(../../assets/savanna.jpg) no-repeat center;
+  color: #fff;
+  background-size: cover;
+}
+
+.savanna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  width: 100%;
+  position: relative;
+}
+
+.gamePage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  background-color:#d69f58;// #26a69a;//#7752be;#d69f58;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  min-width: 100px;
+  padding: 10px 24px;
+  transition: all 0.5s ease;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 250px;
+  align-items: center;
+}
+.savannaWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.correctWord {
+  font-size: 35px;
+  text-align: center;
+  //margin-left: 15px;
+  position: absolute;
+  transform: translate(-50%);
+  //top:0;
+}
+
+.hide {
+  display: none;
+}
+
+.animation {
+  animation: falling 6s infinite;
+}
+
+
+@keyframes falling {
+  0% {
+    top: 0%;
+  }
+
+  100% {
+    top: 70%;
+  }
+}

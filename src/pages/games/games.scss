@@ -1,0 +1,72 @@
+.gameWrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.gameMenu {
+  background-color: #ebeff2;
+  height: 100vh;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.card {
+  width: calc(50% - 30px);
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 20px;
+  box-shadow: 1px 3px 4px rgb(0 0 0 / 10%);
+  overflow: hidden;
+  color: #fff;
+  font-size: 30px;
+  transition: all 0.5s ease;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.cardSprint {
+  background: url(../../assets/sprintgame.jpg) no-repeat center;
+  background-size: cover;
+}
+.cardSavanna {
+  background: url(../../assets/savannagame.jpg) no-repeat center;
+  background-size: cover;
+}
+.cardAudiocall {
+  background: url(../../assets/audiocallgame.jpg) no-repeat center;
+  background-size: cover;
+}
+.cardTitle {
+  position: absolute;
+  bottom: 20px;
+  //right: 10px;
+  text-shadow: black 1px 1px 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cardLink {
+  position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index:4;
+}
+
+@media(max-width: 550px) {
+  .card {
+    width: calc(100% - 30px);
+  }
+}

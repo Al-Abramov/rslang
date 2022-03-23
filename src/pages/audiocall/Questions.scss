@@ -1,0 +1,62 @@
+.audioWords {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+.audioWord {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  font-size: 22px;
+  background-color: transparent;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+.audioWord:hover {
+  background-color: rgba(255,255,255,.2);
+}
+.wordIndex {
+  margin-right: 5px;
+  
+}
+.button {
+  display: inline-block;
+  background-color: #d69f58;//#26a69a;//#7752be;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  min-width: 100px;
+  padding: 10px 24px;
+  transition: all 0.5s ease;
+  font-size: 20px;
+  outline:none;
+  transition: transform 0.5s ease 0s;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+
+.wrongAnswers {
+  color: rgba(255,255,255,0.4);
+  pointer-events: none;
+
+}
+.correctAnswer {
+  color: white;
+  font-weight: 500;
+  pointer-events: none;
+}
+.wrongAnswer {
+  color: red;
+}
+
+.gameHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+  
+}

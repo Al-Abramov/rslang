@@ -1,0 +1,77 @@
+.controlsWrapper {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+
+  &__control {
+    margin: 10px;
+  }
+}
+
+.formStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controlsWrapper .formBtn {
+  width: 53%;
+  border: 1px solid #989090;
+  margin-bottom: 35px;
+  margin-top: 45px;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+  & a {
+    color: #215ab8e6;
+  }
+}
+
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.title {
+  margin: 20px 0;
+}
+
+.minPicReg {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background-image: url('../../assets/toppng.com-banksy-because-i-m-worthless-rat-923x1001.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.minPicLog {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  width: 150px;
+  height: 150px;
+  background-image: url('../../assets/banksy-maid-canvas.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 605px) {
+  .minPicLog {
+    bottom: 115px;
+  }
+
+  .minPicReg {
+    bottom: 115px;
+  }
+}

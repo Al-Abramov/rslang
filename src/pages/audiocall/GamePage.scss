@@ -1,0 +1,128 @@
+.gameAudioWrapper {
+  background-size: cover;
+  background: url(../../assets/audiocall.jpg) no-repeat center;
+  color: #fff;
+}
+
+.audiocall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  width: 100%;
+  
+}
+
+
+.gameAudioPage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.words {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.word {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+.wordImg {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  background-color: transparent;
+  //background-image: url(../../assets/svg/book.svg);
+  object-fit: cover;
+  img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+.button {
+  display: inline-block;
+  background-color:#d69f58;// #26a69a;//#7752be;#d69f58;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  min-width: 100px;
+  padding: 10px 24px;
+  transition: all 0.5s ease;
+}
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 250px;
+  align-items: center;
+}
+.audioWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+// .audioElement {
+  
+//   background-image: url(../../assets/svg/audio.svg);
+//   background-position: 50%;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   cursor: pointer;
+// }
+.audioElement {
+  width: 72px;
+    height: 72px;
+    background-color: rgba(250, 252, 254, 0.3);
+    color: rgb(255, 255, 255);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: currentColor;
+    }
+}
+
+.audioLarge {
+  width: 72px;
+  height: 72px;
+}
+.audioSmall {
+  width: 40px;
+  height: 40px;
+}
+
+.correctAudioWord {
+  font-size: 35px;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.hide {
+  display: none;
+}

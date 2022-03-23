@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+html,
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0,0,0,.87);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.sideBar {
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  top:0;
+  left:-100%;
+  overflow: auto;
+  padding: 120px 30px 30px 30px;
+  background-color: #fff;
+  color:#000;
+  transition:left  0.3s ease 0s;
+}
+
+.sideBar.active {
+  left:0;
+}

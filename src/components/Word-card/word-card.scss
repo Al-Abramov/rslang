@@ -1,0 +1,31 @@
+.wordCardTitle,
+.wordCardSubtitle,
+.wordCardSubtitle__min {
+  font-family: 'Roboto';
+  margin: 0;
+}
+
+.innerContainer {
+  margin-left: 20px;
+}
+
+.wordCardTitle {
+  font-size: 22px;
+}
+
+.wordCardSubtitle {
+  font-size: 18px;
+
+  &__min {
+    font-size: 16px;
+    opacity: 0.6;
+  }
+}
+
+.df {
+  display: flex;
+}
+
+.subttlContainer {
+  margin: 10px 0;
+}

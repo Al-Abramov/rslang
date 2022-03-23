@@ -1,0 +1,280 @@
+.sprintContainer {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+
+  background: url(https://i.imgur.com/wCG2csZ.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.innerContainer {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnsWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sprintTitle {
+  font-size: 52px;
+  line-height: 72px;
+  margin-bottom: 30px;
+}
+
+.sprintSubttl {
+  font-size: 24px;
+  text-align: center;
+}
+
+.settingsBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 3px solid #fff;
+  cursor: pointer;
+  color: #fff;
+  font-size: 22px;
+  opacity: 0.9;
+}
+
+.settingsBtn:not(:nth-child(6)) {
+  margin-right: 15px;
+}
+
+.settingsBtn:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.mt {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.startBtn {
+  width: 30%;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #dff6c8c2;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+
+.mouseIcon {
+  background-image: url('../../../../assets/png/mouse.png');
+}
+
+.arrowIcon {
+  background-image: url('../../../../assets/png/arrows-transp.png');
+}
+
+.choiceWrap {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.sbttlWrap {
+  margin-top: 90px;
+}
+
+.bgStyle {
+  height: 89.3vh;
+  background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
+  background-size: 300% 300%;
+  animation: Background 25s ease infinite;
+}
+
+@keyframes Background {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+/* Game */
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.circle:not(:nth-child(3)) {
+  margin-right: 20px;
+}
+
+.circleWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.wordContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.word {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.translate {
+  font-size: 22px;
+}
+
+.btnsContainer {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+}
+
+.btn:hover {
+  filter: brightness(1.1);
+}
+
+.yes {
+  background-color: #65e8a2;
+}
+
+.no {
+  background-color: #cc2f8ae6;
+}
+
+.timeWrap {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.score {
+  position: relative;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.active {
+  background-color: #8d4bcabd;
+}
+
+.startActive {
+  background-color: #a6e766c2;
+}
+
+.scoreItem {
+  position: absolute;
+  right: -60px;
+  color: #f9ed20;
+}
+
+/* result */
+.wordsContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.wordsContainer:nth-of-type(1) {
+  border-bottom: 1px solid #000;
+}
+
+.studiedTitle {
+  font-size: 22px;
+  color: #15b47f;
+}
+
+.wrongTitle {
+  font-size: 22px;
+  color: #dc0564;
+}
+
+.wordTitle {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.wordTitleBold {
+  color: #306fdf;
+  font-weight: 600;
+}
+
+.progressCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.9;
+  z-index: 100;
+}
+
+.btnsResultContainer {
+  margin-top: 30px;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resultBtn {
+  width: 130px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #65289ec9;
+  color: #fff;
+  font-size: 14px;
+}
+
+.resultBtn:nth-of-type(1) {
+  margin-right: 20px;
+}
+
+.resultBtn:hover {
+  filter: brightness(1.3);
+}

@@ -1,0 +1,112 @@
+.container {
+  max-width: 1000px;
+  margin:0 auto;
+  padding: 0 20px;
+}
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  //color: #533738;
+}
+.teamItems {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.team {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.teamCard {
+  width: calc(45% - 30px);
+  min-width: 200px;
+  height: 400px;
+  background-color: #f9f8fa;
+  border-radius: 20px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  //color: #29244e;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+.teamImg {
+  width: 150px;
+  height: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+.teamImg1 {
+  background-image: url(../../assets/avatar1.jpg);
+}
+.teamImg2 {
+  background-image: url(../../assets/avatar2.jpg);
+}
+.teamTitle {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+  padding: 0 10px;
+}
+
+.teamSubtitle {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.54);
+  margin-bottom: 15px;
+}
+.teamText {
+  font-size: 1.1rem;
+  line-height: 26px;
+  padding: 0 10px;
+}
+.github {
+  font-size: 1rem;
+  text-decoration: none;
+  margin-bottom: 5px;
+  color: #3f51b5;
+  display: flex;
+  align-items: center;
+}
+.github:hover {
+  text-decoration: underline;
+}
+.github::before {
+  /* content: "\2713"; */
+  content: "";
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px;
+}
+.github::before {
+  background-image: url("../../assets/svg/github.svg");
+}
+
+@media(max-width: 900px) {
+  .container {
+    max-width: 400px;
+  }
+  .teamCard {
+    width: calc(100% - 30px);
+    //height: 250px;
+  }
+}

@@ -1,0 +1,46 @@
+.footer {
+  background-color: #e2c4ba;
+  background: #ebebeb;
+  color: rgba(0, 0, 0, 0.87);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 50px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.teamName {
+  color: #3f51b5;
+  text-decoration: none;
+  padding: 8px;
+  transition: all 0.3s ease 0s;
+}
+.teamName:hover {
+  color: #7784cc;
+}
+
+.rsschool {
+  display: block;
+  width: 80px;
+  height: 30px;
+  background-image: url("../../assets/svg/rs.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media(max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
+  }
+}
